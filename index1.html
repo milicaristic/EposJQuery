@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+      body{
+        background-color: coral;
+      }
+      
+
+      li{
+        margin: 1em 0;
+      }
+
+      li a {
+        text-decoration: none;
+        
+      }
+
+      .list-group-item{
+        background-color: #89cff0;
+        
+        color: white;
+        border: none;
+      }
+
+      .container{
+        margin-top: 1em;
+        background-color: #89cff0;
+        border: 2px solid black;
+        border-bottom: none;
+      }
+      #containerText{
+        margin-top: 0;
+        border-bottom: 2px solid black;
+        background-color: white;
+      }
+      .btn-primary{
+        border: 2px solid black;
+        font-weight: bold;
+      }
+      p{
+        padding-top: 1em;
+        font-weight: bold;
+      }
+      
+    </style>
+        
+    <script>
+        $(document).ready(function(){
+          $("#prva").click(function(){
+            $("p").text("Ovo je tekst prvog taba");
+          })
+
+          $("#druga").click(function(){
+            $("p").text("Ovo je tekst drugog, mog omiljenog taba");
+          })            
+          
+          $("#treca").click(function(){
+            $("p").text("Ovo je tekst treceg, mog poslednjeg taba");
+          })
+        })
+    </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <ul class="list-group list-group-horizontal">
+        <li class="list-group-item"><button class="btn btn-primary" id="prva">Prva</button></li>
+        <li class="list-group-item"><button class="btn btn-primary" id="druga">Druga</button></li>
+        <li class="list-group-item"><button class="btn btn-primary" id="treca">Treća</button></li>
+      </ul>
+    </div>
+  </header>
+      
+        
+        <div id = "containerText"class="container">
+              <p>Ovo je tekst prvog taba</p>
+        </div>
+      
+
+
+</body>
+</html>
